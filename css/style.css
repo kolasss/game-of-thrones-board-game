@@ -1,0 +1,1716 @@
+/* "Simpliste" template. Renat Rafikov. http://cssr.ru/simpliste/ */
+
+/* CSS reset. Based on HTML5 boilerplate reset http://html5boilerplate.com/  */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display:block; }
+audio[controls], canvas, video { display:inline-block; *display:inline; *zoom:1; }
+html { font-size:100%; overflow-y:scroll; -webkit-overflow-scrolling:touch; -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+body { margin:0; font-size:13px; line-height:1.231; }
+body, button, input, select, textarea { font-family:sans-serif; color:#222; }
+a { color:#00e; }
+a:visited { color:#551a8b; }
+a:focus { outline:thin dotted; }
+a:hover, a:active { outline:0; }
+abbr[title] { border-bottom:1px dotted; }
+b, strong { font-weight:bold; }
+blockquote { margin:1em 40px; }
+dfn { font-style:italic; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+ins { background:#ff9; color:#000; text-decoration:none; }
+mark { background:#ff0; color:#000; font-style:italic; font-weight:bold; }
+pre, code, kbd, samp { font-family:monospace, monospace; _font-family:'courier new', monospace; font-size:1em; }
+pre { white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
+q { quotes:none; }
+q:before, q:after { content:""; content:none; }
+small { font-size:85%; }
+sub, sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+ul, ol { margin:1em 0; padding:0 0 0 2em; }
+dd { margin:0 0 0 40px; }
+nav ul, nav ol { list-style:none; margin:0; padding:0; }
+img { border:0; -ms-interpolation-mode:bicubic; }
+svg:not(:root) { overflow:hidden;}
+figure { margin:0; }
+form { margin:0; }
+fieldset { border:0; margin:0; padding:0; }
+legend { border:0; *margin-left:-7px; padding:0; }
+label { cursor:pointer; }
+button, input, select, textarea { font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle; }
+button, input { line-height:normal; *overflow:visible; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor:pointer; -webkit-appearance:button; }
+input[type="checkbox"], input[type="radio"] { box-sizing:border-box; }
+input[type="search"] { -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
+textarea { overflow:auto; vertical-align:top; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color:#f0dddd; }
+table { border-collapse:collapse; border-spacing:0; }
+.hidden { display:none; visibility:hidden; }
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
+/* End CSS reset */
+
+
+/* [Skin "Tea with milk"] */
+.container {
+  
+}
+
+.header {
+  margin:1px 0 3em 0;
+  padding:2em 2% 0 2%;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  font-size:22px;
+}
+
+
+.info {
+  padding:0 0 1em 2%;
+}
+
+.footer {
+  border-top:2px solid #f7f6ee;
+  padding:2em 2% 3em 2%;
+}
+
+.copyright {
+  width:150px;
+  float:left;
+  font-family:tahoma, sans-serif;
+}
+
+
+/* Skin appearance */
+body {
+  font-family:arial, sans-serif;
+  color:#222;
+  background:#f3f1e5;
+}
+
+a { color:#52a6c7; }
+a:hover { color:#878787; }
+a:visited { color:#9c52c7; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+h1, h2 {
+  font-family:tahoma, sans-serif;
+  font-weight:normal;
+}
+
+h3, h4, h5, h6 {
+  font-family:tahoma, sans-serif;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:1px solid #6aa12e;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+  -webkit-box-shadow:#e4ffc6 0px 2px 3px inset;
+  -moz-box-shadow:#e4ffc6 0px 2px 3px inset;
+  box-shadow:#e4ffc6 0px 2px 3px inset;
+  background:#88bf4c;
+  color:#e2eed6;
+  padding:7px 15px;
+  font-family:verdana, sans-serif;
+  text-shadow:1px 1px 0px #6aa12e;
+  display:inline-block;
+  cursor:pointer;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;  
+  -webkit-box-shadow:#e4ffc6 0px 1px 1px inset;
+  -moz-box-shadow:#e4ffc6 0px 1px 1px inset;
+  box-shadow:#e4ffc6 0px 1px 1px inset;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88bf4c), to(#B6DE8A));
+  background: -webkit-linear-gradient(#88bf4c, #B6DE8A);
+  background: -moz-linear-gradient(#88bf4c, #B6DE8A);
+  background: -ms-linear-gradient(#88bf4c, #B6DE8A);
+  background: -o-linear-gradient(#88bf4c, #B6DE8A);
+  background: linear-gradient(#88bf4c, #B6DE8A);
+}
+a.button:active,
+.button:active {
+  color:#65982d;
+  text-shadow:1px 1px 1px #b9e38c;
+  -webkit-box-shadow:#ef420c 0px -3px 3px inset;
+  -moz-box-shadow:#ef420c 0px -3px 3px inset;
+  box-shadow:#ef420c 0px -3px 3px inset;
+  -webkit-box-shadow:#53841e 0px 2px 3px inset;
+  -moz-box-shadow:#53841e 0px 2px 3px inset;
+  box-shadow:#53841e 0px 2px 3px inset;
+  background:#88bf4c;
+}
+
+/* [End skin] */
+
+
+
+/* game */
+
+
+#backgroundPopup{
+display:none;
+position:fixed;
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#000000;
+border:1px solid #cecece;
+z-index:101;
+}
+
+#popup{
+display:none;
+position:fixed;
+height:auto;
+width:auto;
+background:#f3f1e5;
+border:2px solid #cecece;
+z-index:102;
+padding:12px;
+font-size:13px;
+}
+#popup input {margin:0 5px 5px 0;}
+
+#popupContactClose{  
+font-size:14px;  
+line-height:14px;  
+right:6px;  
+top:4px;  
+position:absolute;  
+color:#6fa5fd;  
+font-weight:700;  
+display:block;
+text-decoration:none;
+}
+
+/*popup 2 style*/
+#popup2{
+display:none;
+position:fixed;
+height:auto;
+width:auto;
+background:#f3f1e5;
+border:2px solid #cecece;
+z-index:103;
+padding:12px;
+font-size:13px;
+}
+a.yes{
+	margin: 0 20px 0 40px;
+}
+
+a.no {
+  border:1px solid #600;
+  -webkit-box-shadow:#FF2B2B 0px 2px 3px inset;
+  -moz-box-shadow:#FF2B2B 0px 2px 3px inset;
+  box-shadow: #FF2B2B 0px 2px 3px inset;
+  background: #CA0000;
+  color: #FF9;
+  text-shadow:1px 1px 0px #590000;
+}
+a.no:hover {
+  color:#FF9;  
+  -webkit-box-shadow:#FF4242 0px 1px 1px inset;
+  -moz-box-shadow:#FF4242 0px 1px 1px inset;
+  box-shadow:#FF4242 0px 1px 1px inset;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#CA0000), to(#FF1C1C));
+  background: -webkit-linear-gradient(#CA0000, #FF1C1C);
+  background: -moz-linear-gradient(#CA0000, #FF1C1C);
+  background: -ms-linear-gradient(#CA0000, #FF1C1C);
+  background: -o-linear-gradient(#CA0000, #FF1C1C);
+  background: linear-gradient(#CA0000, #FF1C1C);
+}
+a.no:active {
+  color: #5B0000;
+  text-shadow:1px 1px 1px #F00;
+  -webkit-box-shadow:#590000 0px 2px 3px inset;
+  -moz-box-shadow:#590000 0px 2px 3px inset;
+  box-shadow:#590000 0px 2px 3px inset;
+  background:#CA0000;
+}
+/*popup 3 style*/
+#popup3{
+display:none;
+position:fixed;
+height:auto;
+width:auto;
+background:#f3f1e5;
+border:2px solid #cecece;
+z-index:104;
+padding:12px;
+font-size:13px;
+}
+
+#register {
+	color:#093950;
+	background:#FFFF40;
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#D9D900), to(#FEB741));
+	background:-webkit-linear-gradient(#D9D900, #FEB741);
+	background:-moz-linear-gradient(#D9D900, #FEB741);
+	background:-ms-linear-gradient(#D9D900, #FEB741);
+	background:-o-linear-gradient(#D9D900, #FEB741);
+	background:linear-gradient(#D9D900, #FEB741);
+	text-shadow:1px 1px 1px #6F6F00;
+}
+#register:hover {
+	color:#093950;
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#FEB741), to(#D9D900));
+	background:-webkit-linear-gradient(#FEB741, #D9D900);
+	background:-moz-linear-gradient(#FEB741, #D9D900);
+	background:-ms-linear-gradient(#FEB741, #D9D900);
+	background:-o-linear-gradient(#FEB741, #D9D900);
+	background:linear-gradient(#FEB741, #D9D900);
+}
+#register:active {
+	color: #424200;
+	text-shadow:1px 1px 1px #FF3;
+	-webkit-box-shadow:#FF3 0px 2px 3px inset;
+	-moz-box-shadow:#FF3 0px 2px 3px inset;
+	box-shadow:inset 0px 2px 3px #5A4D01;
+}
+
+#popupOk, #battleOk, #casualties {
+	margin-left:-30px;
+	left:50%;
+	position:relative;
+}
+
+#popupContent .button{margin-top:10px;}
+
+.centered {
+	margin-left:-165px;
+	left:50%;
+	position: relative;
+	width:400px;
+}
+#left_menu{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#left_menu li{
+    display:inline-block;
+    padding:10px;
+}
+#main_menu {padding:5px;}
+#main_menu li {display:inline-block;}
+#creategame {margin-right:20px;}
+
+#popupContent li{
+	text-decoration:none;
+	cursor:default;
+	list-style-type: none;
+}
+#popupContent .mainmenu {margin-top:30px;}
+
+#usermenu {
+  width:300px;
+  float:right;
+  text-align:left;
+  margin:0;
+  top:-10px;
+  position:relative;
+}
+#usermenu .button {
+	display:inline-block;
+	margin-top: 10px;
+	float:left;
+}
+#enter {margin-right:70px;}
+
+.mainmenu {
+    float:right;
+}
+#usermenu .mainmenu {
+    margin-left: 20px;
+}
+footer .mainmenu {
+    margin: 0 60px 30px 0;
+}
+
+/*List of games to join*/
+#gamelist td {
+    padding:9px 7px;
+    border-left:1px solid #ddd;
+}
+#gamelist tr td:first-child {border-left:0;}
+
+#gamelist tr {
+    border-bottom:1px solid #fbfbfb;
+}
+#gamelist tr:nth-child(even) {
+    background:#F2F2F2;
+}
+
+#gamelist tr:last-child {
+    border:0;
+}
+
+/*game info*/
+#info {
+    float: right;
+    margin-right: 50px;
+}
+#info td {
+    padding:9px 7px;
+    border-left:1px solid #ddd;
+    width: 75px;
+    font-size: 13px;
+}
+#info tr td:first-child {border-left:0;}
+
+#info tr {
+    border-bottom:1px solid #fbfbfb;
+}
+
+#info tr:last-child {
+    border:0;
+}
+
+/* Game of thrones*/
+
+#board {
+	background-image:url(/images/board.jpg);
+	width:1115px;
+	height:2231px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	position: relative;
+	float:left;
+	margin: 5px 0;
+}
+#board img {
+	position: absolute;
+	top:0px;
+	opacity: 0.1;
+	z-index: 1;
+}
+
+
+.floatleft{float:left;}
+
+/*game info*/
+#turn{margin-right:40px;}
+#phase{margin-right:40px;}
+#now{padding-right:10px;}
+
+#zamki{
+	margin:5px;
+	background:url(../images/victory.jpg) no-repeat left top;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+}
+#bochki{
+	background:url(../images/bochki.jpg) no-repeat left top;
+	height:169px;
+	width:367px;
+	padding:50px 0 0 25px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+}
+
+.supply{
+	width:26px;
+	height:26px;
+	background:no-repeat;
+	position:relative;
+}
+.Baratheon-s{
+	background: url(../images/supply_baratheon.gif);
+	margin-top:-14px;
+}
+.Lannister-s{
+	background: url(../images/supply_lannister.gif);
+	margin-top:-14px;
+}
+.Stark-s{
+	background: url(../images/supply_stark.gif);
+	margin-top:-14px;
+}
+.Martell-s{
+	background: url(../images/supply_martell.gif);
+	margin-top:-14px;
+}
+.Greyjoy-s{
+	background: url(../images/supply_greyjoy.gif);
+	margin-top:-14px;
+}
+.Tyrell-s{
+	background: url(../images/supply_tyrell.gif);
+	margin-top:-14px;
+}
+
+
+#track, #copytrack{
+	background:url(../images/track.jpg) no-repeat left top;
+	height:216px;
+	width:470px;
+	padding:3px 0 0 105px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+}
+#track .token, #copytrack .token{
+	float:right;
+}
+.token{
+	width:52px;
+	height:52px;
+	background:no-repeat;
+}
+#board .token {
+	position: absolute;
+	z-index:9;
+}
+.baratheon-track{
+	background: url(../images/token_baratheon.gif);
+}
+.lannister-track{
+	background: url(../images/token_lannister.gif);
+}
+.stark-track{
+	background: url(../images/token_stark.gif);
+}
+.martell-track{
+	background: url(../images/token_martell.gif);
+}
+.greyjoy-track{
+	background: url(../images/token_greyjoy.gif);
+}
+.tyrell-track{
+	background: url(../images/token_tyrell.gif);
+}
+/*power token*/
+.powertoken{
+	width:40px;
+	height:56px;
+	background:no-repeat;
+	position: absolute;
+	z-index:9;
+}
+.baratheon-pt{
+	background: url(../images/powertoken_baratheon.gif);
+}
+.lannister-pt{
+	background: url(../images/powertoken_lannister.gif);
+}
+.stark-pt{
+	background: url(../images/powertoken_stark.gif);
+}
+.martell-pt{
+	background: url(../images/powertoken_martell.gif);
+}
+.greyjoy-pt{
+	background: url(../images/powertoken_greyjoy.gif);
+}
+.tyrell-pt{
+	background: url(../images/powertoken_tyrell.gif);
+}
+
+/*Westeros Cards*/
+#WCards td{
+    padding: 5px;
+    text-align: center;
+}
+
+/*Wildlings*/
+#wildpower{
+	margin-top:58px;
+	margin-left:280px;
+}
+#wildtoken{
+	background: url(../images/wildlings.gif) no-repeat;
+	height:60px;
+	width:57px;
+}
+#WildCard{
+	height:125px;
+	width:210px;
+	margin-top:-106px;
+	margin-left:870px;
+	border: 1px #333 solid;
+	z-index:6;
+	position:absolute;
+	color:#FF0;
+	padding: 5px;
+}
+#WildCard:hover {
+	border: #0CF 1px solid;
+}
+#WildCard:active {
+	border: #FF0 1px solid;
+}
+
+/*house's info*/
+.house {
+	float:left;
+	width:420px;
+	padding:5px;
+	margin:5px 0 0px 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 8px;
+}
+.house p, .house ul {
+	float:left;
+}
+.house p{
+	font-size:14px;
+}
+.house ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.house li {
+	float: left;
+	padding:0;
+	display: block;
+	margin: 0 5px 5px 0;
+}
+.house li img{
+	margin:0;
+}
+.discarded{
+	-moz-box-shadow: 0 0 5px 5px #F00;
+	-webkit-box-shadow: 0 0 5px 5px#F00;
+	box-shadow: 0 0 5px 5px #F00;
+	opacity:0.5;
+}
+	
+#BI{
+	background: url(../images/Baratheon.jpg) no-repeat bottom right #FF6;	
+}
+#GI{
+	background: url(../images/Greyjoy.jpg) no-repeat bottom right #333;
+	color:#FFF;	
+}
+#LI{
+	background: url(../images/Lannister.jpg) no-repeat bottom right #620000;
+	color:#FFF;	
+}
+#MI{
+	background: url(../images/Martell.jpg) no-repeat bottom right #FFA953;	
+}
+#SI{
+	background: url(../images/Stark.jpg) no-repeat bottom right #CCC;	
+}
+#TI{
+	background: url(../images/Tyrell.jpg) no-repeat bottom right #030;	
+	color:#FFF;
+}
+.raven{
+	margin-left:30px;
+	width:126px;
+	height:41px;
+	float:left;
+	background-image:url(../images/raven.gif);
+	display:none;
+}
+.blade{
+	margin-left:10px;
+	width:122px;
+	height:40px;
+	float:left;
+	background-image:url(../images/blade.gif);
+	display:none;
+}
+.throne{
+	width:58px;
+	height:88px;
+	position:relative;
+	top:220px;
+	left:330px;
+	background-image:url(../images/throne.gif);
+	display:none;
+}
+
+/*land*/
+.land {
+	width:100px;
+	height:100px;
+	border: dotted 1px #0F0;
+	position: absolute;
+	z-index:5;
+	cursor:pointer;
+}
+
+.land:hover {
+  -webkit-box-shadow:#0F0 3px 3px 9px inset;
+  -moz-box-shadow:#0F0 3px 3px 9px inset;
+  box-shadow:#0F0 1px 1px 9px inset;
+  
+}
+
+.land:active {
+  -webkit-box-shadow:#F00 1px 1px 9px inset;
+  -moz-box-shadow:#F00 1px 1px 9px inset;
+  box-shadow:#F00 1px 1px 9px inset;
+  border:#F00;
+  
+}
+.starting { background-color: rgba(255,255,0,0.5);}
+
+/*lands*/
+/*north*/
+#CastleBlack {
+	top:180px;
+	left:630px;
+}
+#CastleBlack-token {
+	top:248px;
+	left:528px;
+}
+#Karhold{
+	top:316px;
+	left:877px;
+}
+#Winterfell{
+	top:384px;
+	left:573px;
+}
+#StonyShore{
+	top:533px;
+	left:224px;
+}
+#WhiteHarbor{
+	top:575px;
+	left:606px;
+}
+#WidowsWatch{
+	top:588px;
+	left:769px;
+}
+#FlintsFinger{
+	top:832px;
+	left:212px;
+}
+#GreywaterWatch{
+	top:791px;
+	left:337px;
+}
+#MoatCailin{
+	top:833px;
+	left:452px;
+}
+/*mainland*/
+#Seagard{
+	top:946px;
+	left:338px;
+}
+#Twins{
+	top:959px;
+	left:541px;
+}
+#Fingers{
+	top:918px;
+	left:740px;
+}
+#MountainsOfMoon{
+	top:1054px;
+	left:674px;
+}
+#Eyrie{
+	
+	top:1169px;
+	left:803px;
+}
+#Pyke{
+	top:998px;
+	left:77px;
+}
+#Riverrun{
+	top:1141px;
+	left:382px;
+}
+#Lannisport{
+	top:1182px;
+	left:263px;
+}
+#StoneySept{
+	top:1278px;
+	left:383px;
+}
+#Harrenhal{
+	top:1223px;
+	left:523px;
+}
+#CrackclawPoint{
+	top:1297px;
+	left:667px;
+}
+#Dragonstone{
+	top:1268px;
+	left:999px;
+}
+#SearoadMarches{
+	top:1430px;
+	left:221px;
+}
+#Blackwater{
+	top:1397px;
+	left:518px;
+}
+#KingsLanding{
+	top:1417px;
+	left:665px;
+}
+#Highgarden{
+	top:1616px;
+	left:249px;
+}
+#Reach{
+	top:1596px;
+	left:409px;
+}
+#Kingswood{
+	top:1521px;
+	left:775px;
+}
+#StormsEnd{
+	top:1683px;
+	left:727px;
+}
+
+/*south*/
+#DornishMarches{
+	top:1703px;
+	left:400px;
+}
+#Boneway{
+	top:1727px;
+	left:594px;
+}
+#Oldtown{
+	top:1779px;
+	left:201px;
+}
+#ThreeTowers{
+	top:1886px;
+	left:288px;
+}
+#PrincesPass{
+	top:1813px;
+	left:404px;
+}
+#Yronwood{
+	top:1914px;
+	left:506px;
+}
+#Starfall{
+	top:2012px;
+	left:386px;
+}
+#Arbor{
+	top:2042px;
+	left:51px;
+}
+#Sunspear{
+	top:1923px;
+	left:807px;
+}
+#SaltShore{
+	top:1990px;
+	left:644px;
+}
+
+/*water*/
+.water {
+	width:100px;
+	height:100px;
+	border: dotted 1px #00F;
+	position: absolute;
+	z-index:5;
+	cursor:pointer;
+}
+
+.water:hover {
+  -webkit-box-shadow:#00F 3px 3px 9px inset;
+  -moz-box-shadow:#00F 3px 3px 9px inset;
+  box-shadow:#00F 1px 1px 9px inset;
+  
+}
+
+.water:active {
+  -webkit-box-shadow:#F00 1px 1px 9px inset;
+  -moz-box-shadow:#F00 1px 1px 9px inset;
+  box-shadow:#F00 1px 1px 9px inset;
+  border:#F00;
+  
+}
+
+/*west*/
+#BayofIce{
+	top:401px;
+	left:47px;
+}
+#WinterfellPort{
+	top:338px;
+	left:255px;
+}
+#SunsetSea{
+	top:823px;
+	left:8px;
+}
+#IronmansBay{
+	top:1136px;
+	left:50px;
+}
+#PykePort{
+	top:987px;
+	left:214px;
+}
+#GoldenSound{
+	top:1346px;
+	left:49px;
+}
+#LannisportPort{
+	top:1263px;
+	left:159px;
+}
+#WestSummerSea{
+	top:2114px;
+	left:243px;
+}
+#RedwyneStraghts{
+	top:1896px;
+	left:41px;
+}
+#OldtownPort{
+	top:1771px;
+	left:96px;
+}
+/*east*/
+#ShiveringSea{
+	top:464px;
+	left:967px;
+}
+#NarrowSea{
+	top:870px;
+	left:990px;
+}
+#WhiteHarborPort{
+	top:765px;
+	left:633px;
+}
+#ShipbreakerBay{
+	top:1587px;
+	left:992px;
+}
+#DragonstonePort{
+	top:1403px;
+	left:992px;
+}
+#BlackwaterBay{
+	top:1373px;
+	left:795px;
+}
+#StormsEndPort{
+	top:1668px;
+	left:831px;
+}
+#EastSummerSea{
+	top:2103px;
+	left:935px;
+}
+#SunspearPort{
+	top:1954px;
+	left:951px;
+}
+#SeaOfDorne{
+	top:1817px;
+	left:716px;
+}
+
+/*power tokens*/
+/*north*/
+#CastleBlack-token{
+	top:248px;
+	left:528px;
+}
+#Karhold-token{
+	top:427px;
+	left:831px;
+}
+#Winterfell-token{
+	top:435px;
+	left:430px;
+}
+#StonyShore-token{
+	top:685px;
+	left:220px;
+}
+#WhiteHarbor-token{
+	top:519px;
+	left:704px;
+}
+#WidowsWatch-token{
+	top:639px;
+	left:715px;
+}
+#FlintsFinger-token{
+	top:866px;
+	left:142px;
+}
+#GreywaterWatch-token{
+	top:891px;
+	left:322px;
+}
+#MoatCailin-token{
+	top:938px;
+	left:464px;
+}
+/*mainland*/
+#Seagard-token{
+	top:1044px;
+	left:430px;
+}
+#Twins-token{
+	top:1047px;
+	left:517px;
+}
+#Fingers-token{
+	top:967px;
+	left:665px;
+}
+#MountainsOfMoon-token{
+	top:1057px;
+	left:816px;
+}
+#Eyrie-token{
+	top:1122px;
+	left:884px;
+}
+#Pyke-token{
+	top:1055px;
+	left:165px;
+}
+#Riverrun-token{
+	top:1141px;
+	left:507px;
+}
+#Lannisport-token{
+	top:1324px;
+	left:285px;
+}
+#StoneySept-token{
+	top:1384px;
+	left:359px;
+}
+#Harrenhal-token{
+	top:1312px;
+	left:597px;
+}
+#CrackclawPoint-token{
+	top:1291px;
+	left:784px;
+}
+#Dragonstone-token{
+	top:1317px;
+	left:955px;
+}
+#SearoadMarches-token{
+	top:1539px;
+	left:275px;
+}
+#Blackwater-token{
+	top:1490px;
+	left:386px;
+}
+#KingsLanding-token{
+	top:1511px;
+	left:681px;
+}
+#Highgarden-token{
+	top:1725px;
+	left:286px;
+}
+#Reach-token{
+	top:1626px;
+	left:571px;
+}
+#Kingswood-token{
+	top:1618px;
+	left:714px;
+}
+#StormsEnd-token{
+	top:1769px;
+	left:833px;
+}
+
+/*south*/
+#DornishMarches-token{
+	top:1728px;
+	left:506px;
+}
+#Boneway-token{
+	top:1799px;
+	left:535px;
+}
+#Oldtown-token{
+	top:1882px;
+	left:152px;
+}
+#ThreeTowers-token{
+	top:1965px;
+	left:218px;
+}
+#PrincesPass-token{
+	top:1910px;
+	left:410px;
+}
+#Yronwood-token{
+	top:1928px;
+	left:654px;
+}
+#Starfall-token{
+	top:2038px;
+	left:517px;
+}
+#Arbor-token{
+	top:2069px;
+	left:149px;
+}
+#Sunspear-token{
+	top:1915px;
+	left:922px;
+}
+#SaltShore-token{
+	top:2019px;
+	left:754px;
+}
+
+/*units*/
+.footman{
+	width:50px;
+	height:50px;
+	float:left;
+	background:no-repeat;
+	z-index:10;
+	position:relative;
+	font-size:0px;
+}
+.knight{
+	width:45px;
+	height:54px;
+	float:left;
+	background:no-repeat;
+	z-index:10;
+	position:relative;
+	font-size:0px;
+}
+.ship{
+	width:30px;
+	height:67px;
+	float:left;
+	background:no-repeat;
+	z-index:10;
+	position:relative;
+	font-size:0px;
+}
+.engine{
+	width:50px;
+	height:60px;
+	float:left;
+	background:no-repeat;
+	z-index:10;
+	position:relative;
+	font-size:0px;
+}
+
+.routed{
+	-moz-box-shadow: 0 0 5px 5px #F00 inset;
+	-webkit-box-shadow: 0 0 5px 5px#F00 inset;
+	box-shadow: 0 0 5px 5px #F00 inset;
+	opacity:0.5;
+}
+
+.SF1{
+	background:url(../images/units/footman_stark.gif);
+}
+.SK1{
+	background:url(../images/units/knight_stark.gif);
+}
+.SS1{
+	background:url(../images/units/ship_stark.gif);
+}
+.SE1{
+	background:url(../images/units/engine_stark.gif);
+}
+
+.GF1{
+	background:url(../images/units/footman_greyjoy.gif);
+}
+.GK1{
+	background:url(../images/units/knight_greyjoy.gif);
+}
+.GS1{
+	background:url(../images/units/ship_greyjoy.gif);
+}
+.GE1{
+	background:url(../images/units/engine_greyjoy.gif);
+}
+
+.LF1{
+	background:url(../images/units/footman_lannister.gif);
+}
+.LK1{
+	background:url(../images/units/knight_lannister.gif);
+}
+.LS1{
+	background:url(../images/units/ship_lannister.gif);
+}
+.LE1{
+	background:url(../images/units/engine_lannister.gif);
+}
+
+.BF1{
+	background:url(../images/units/footman_baratheon.gif);
+}
+.BK1{
+	background:url(../images/units/knight_baratheon.gif);
+}
+.BS1{
+	background:url(../images/units/ship_baratheon.gif);
+}
+.BE1{
+	background:url(../images/units/engine_baratheon.gif);
+}
+
+.TF1{
+	background:url(../images/units/footman_tyrell.gif);
+}
+.TK1{
+	background:url(../images/units/knight_tyrell.gif);
+}
+.TS1{
+	background:url(../images/units/ship_tyrell.gif);
+}
+.TE1{
+	background:url(../images/units/engine_tyrell.gif);
+}
+
+.MF1{
+	background:url(../images/units/footman_martell.gif);
+}
+.MK1{
+	background:url(../images/units/knight_martell.gif);
+}
+.MS1{
+	background:url(../images/units/ship_martell.gif);
+}
+.ME1{
+	background:url(../images/units/engine_martell.gif);
+}
+
+/*garrisons*/
+.garrison {
+	width:118px;
+	height:69px;
+	position:relative;
+	font-size:0px;
+	z-index:5;
+}
+#Winterfell-gar{
+	background:url(../images/units/garrison_winterfell.jpg) no-repeat;
+	top:70px;
+	left: -170px;
+}
+#Pyke-gar{
+	background:url(../images/units/garrison_pyke.jpg) no-repeat;
+	top:40px;
+	left: 30px;
+}
+#Eyrie-gar{
+	background:url(../images/units/garrison_the_eyrie.jpg) no-repeat;
+	top:10px;
+	left: 0px;
+}
+#Lannisport-gar{
+	background:url(../images/units/garrison_lannisport.jpg) no-repeat;
+	top:130px;
+	left: 0px;
+}
+#Dragonstone-gar{
+	background:url(../images/units/garrison_dragonstone.jpg) no-repeat;
+	top:-20px;
+	left:-10px;
+}
+#KingsLanding-gar{
+	background:url(../images/units/garrison_kings_landing.jpg) no-repeat;
+	top:30px;
+	left: 0px;
+}
+#Highgarden-gar{
+	background:url(../images/units/garrison_highgarden.jpg) no-repeat;
+	top:90px;
+	left: 0px;
+}
+#Sunspear-gar{
+	background:url(../images/units/garrison_sunspear.jpg) no-repeat;
+	top:-20px;
+	left: 25px;
+}
+
+/*orders*/
+.order {
+	height:60px;
+	width:60px;
+	font-size:0px;
+}
+#board .order {
+	position:absolute;
+	z-index:15;
+	top:20px;
+	left:20px;
+}
+#popupContent .order {
+	margin:5px;
+	float:left;
+	cursor:pointer;
+}
+.order1{
+	background:url(../images/orders/march-1.gif) no-repeat;
+}
+.order2{
+	background:url(../images/orders/march0.gif) no-repeat;
+}
+.order3{
+	background:url(../images/orders/defense1.gif) no-repeat;
+}
+.order4{
+	background:url(../images/orders/raid0.gif) no-repeat;
+}
+.order5{
+	background:url(../images/orders/support0.gif) no-repeat;
+}
+.order6{
+	background:url(../images/orders/consolidate0.gif) no-repeat;
+}
+.order7{
+	background:url(../images/orders/march_special.gif) no-repeat;
+}
+.order8{
+	background:url(../images/orders/defense_special.gif) no-repeat;
+}
+.order9{
+	background:url(../images/orders/raid_special.gif) no-repeat;
+}
+.order10{
+	background:url(../images/orders/support_special.gif) no-repeat;
+}
+.order11{
+	background:url(../images/orders/consolidate_special.gif) no-repeat;
+}
+.noorder {
+	height:60px;
+	width:60px;
+	margin:5px;
+	float:left;
+	opacity:0.5;
+}
+
+/*Ready button*/
+#Readybutton{
+  display:none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:20;
+  width:180px;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+  padding:7px 0px 12px;
+  font-family:verdana, sans-serif;
+  font-size:25px;
+  cursor:pointer;
+}
+.notready {
+  border:1px solid #600;
+  -webkit-box-shadow:#FF2B2B 0px 2px 3px inset;
+  -moz-box-shadow:#FF2B2B 0px 2px 3px inset;
+  box-shadow: #FF2B2B 0px 2px 3px inset;
+  background: #CA0000;
+  color: #FF9;
+  text-shadow:1px 1px 0px #590000;
+}
+.notready:hover {
+  color:#FF9;  
+  -webkit-box-shadow:#FF4242 0px 1px 1px inset;
+  -moz-box-shadow:#FF4242 0px 1px 1px inset;
+  box-shadow:#FF4242 0px 1px 1px inset;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#CA0000), to(#FF1C1C));
+  background: -webkit-linear-gradient(#CA0000, #FF1C1C);
+  background: -moz-linear-gradient(#CA0000, #FF1C1C);
+  background: -ms-linear-gradient(#CA0000, #FF1C1C);
+  background: -o-linear-gradient(#CA0000, #FF1C1C);
+  background: linear-gradient(#CA0000, #FF1C1C);
+}
+.notready:active {
+  color: #5B0000;
+  text-shadow:1px 1px 1px #F00;
+  -webkit-box-shadow:#590000 0px 2px 3px inset;
+  -moz-box-shadow:#590000 0px 2px 3px inset;
+  box-shadow:#590000 0px 2px 3px inset;
+  background:#CA0000;
+}
+.ready {
+  border:1px solid #6aa12e;
+  -webkit-box-shadow:#e4ffc6 0px 2px 3px inset;
+  -moz-box-shadow:#e4ffc6 0px 2px 3px inset;
+  box-shadow:#e4ffc6 0px 2px 3px inset;
+  background:#88bf4c;
+  color:#e2eed6;
+  display:inline-block;
+}
+.ready:hover {
+  color:#fff;  
+  -webkit-box-shadow:#e4ffc6 0px 1px 1px inset;
+  -moz-box-shadow:#e4ffc6 0px 1px 1px inset;
+  box-shadow:#e4ffc6 0px 1px 1px inset;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88bf4c), to(#B6DE8A));
+  background: -webkit-linear-gradient(#88bf4c, #B6DE8A);
+  background: -moz-linear-gradient(#88bf4c, #B6DE8A);
+  background: -ms-linear-gradient(#88bf4c, #B6DE8A);
+  background: -o-linear-gradient(#88bf4c, #B6DE8A);
+  background: linear-gradient(#88bf4c, #B6DE8A);
+}
+.ready:active {
+  color:#65982d;
+  text-shadow:1px 1px 1px #b9e38c;
+  -webkit-box-shadow:#ef420c 0px -3px 3px inset;
+  -moz-box-shadow:#ef420c 0px -3px 3px inset;
+  box-shadow:#ef420c 0px -3px 3px inset;
+  -webkit-box-shadow:#53841e 0px 2px 3px inset;
+  -moz-box-shadow:#53841e 0px 2px 3px inset;
+  box-shadow:#53841e 0px 2px 3px inset;
+  background:#88bf4c;
+}
+
+/*March order popup*/
+.selected {
+	background-color: #6F0;
+}
+.selectunit {
+	margin:5px;
+	cursor:pointer;
+}
+a.Select {
+	margin-top:15px;
+	margin-left:-35px;
+	left:50%;
+	position:relative;
+}
+
+/*Battle style*/
+.battle {
+	background: rgba(255, 0, 0, 0.5);
+	border:solid 1px red;
+}
+#aunits, #dunits{
+	padding:10px;
+}
+#aorder .order, #dorder .order, #aunits .order, #dunits .order{
+	cursor: default;
+}
+#dunits .garrison {
+	top:0;
+	left:0;
+}
+
+/*popup2 form support style*/
+#popup2Content form label {
+	margin:10px 5px;
+}
+#submitsup{
+	position:relative;
+	left:50%;
+	margin-left:-33px;
+	margin-top:10px;
+}
+#popup2Content form .order {
+	float:right;
+}
+.supzone{
+	float:left;
+	margin:5px;
+	padding:0 10px;
+	border:1px black solid;
+	height:auto;
+}
+.supunitsdiv {
+	height:70px;
+}
+
+/*house cards large*/
+.hcard {
+	float:left;
+	width:202px;
+	height:310px;
+	margin:2px;
+	font-size:0px;
+}
+#mycards .hcard {
+	cursor:pointer;
+}
+/*Stark*/
+#Eddard {
+	background:url(../images/house/stark/eddard_large.jpg) no-repeat;
+}
+#Robb {
+	background: url(../images/house/stark/robb_large.jpg) no-repeat;
+}
+#Bolton {
+	background: url(../images/house/stark/roose_bolton_large.jpg) no-repeat;
+}
+#Umber {
+	background: url(../images/house/stark/greatjon_umber_large.jpg) no-repeat;
+}
+#Cassel {
+	background: url(../images/house/stark/ser_rodrick_cassel_large.jpg) no-repeat;
+}
+#Blackfish {
+	background: url(../images/house/stark/the_blackfish_large.jpg) no-repeat;
+}
+#Catelyn {
+	background: url(../images/house/stark/catelyn_large.jpg) no-repeat;
+}
+
+/*Lannister*/
+#Tywin {
+	background: url(../images/house/lannister/tywin_large.jpg) no-repeat;
+}
+#Clegan {
+	background: url(../images/house/lannister/ser_gregor_clegane_large.jpg) no-repeat;
+}
+#Hound {
+	background: url(../images/house/lannister/the_hound_large.jpg) no-repeat;
+}
+#Jaime {
+	background: url(../images/house/lannister/ser_jaime_large.jpg) no-repeat;
+}
+#Tyrion {
+	background: url(../images/house/lannister/tyrion_large.jpg) no-repeat;
+}
+#Kevan {
+	background: url(../images/house/lannister/ser_kevan_large.jpg) no-repeat;
+}
+#Cersei {
+	background: url(../images/house/lannister/cersei_large.jpg) no-repeat;
+}
+
+/*Greyjoy*/
+#Euron {
+	background:	url(../images/house/greyjoy/euron_crows_eye_large.jpg) no-repeat;
+}
+#Victarion {
+	background: url(../images/house/greyjoy/victarion_large.jpg) no-repeat;
+}
+#Theon {
+	background: url(../images/house/greyjoy/theon_large.jpg) no-repeat;
+}
+#Balon {
+	background: url(../images/house/greyjoy/balon_large.jpg) no-repeat;
+}
+#Asha {
+	background: url(../images/house/greyjoy/asha_large.jpg) no-repeat;
+}
+#Dagmar {
+	background: url(../images/house/greyjoy/dagmar_large.jpg) no-repeat;
+}
+#Aeron {
+	background: url(../images/house/greyjoy/aeron_damphair_large.jpg) no-repeat;
+}
+
+/*Baratheon*/
+#Stannis {
+	background: url(../images/house/baratheon/stannis_large.jpg) no-repeat;
+}
+#Renly {
+	background: url(../images/house/baratheon/renly_large.jpg) no-repeat;
+}
+#Davos {
+	background: url(../images/house/baratheon/ser_davos_seaworth_large.jpg) no-repeat;
+}
+#Brienne {
+	background: url(../images/house/baratheon/brienne_of_tarth_large.jpg) no-repeat;
+}
+#Melissandre {
+	background: url(../images/house/baratheon/melissandre_large.jpg) no-repeat;
+}
+#Salladhor {
+	background: url(../images/house/baratheon/salladhor_saan_large.jpg) no-repeat;
+}
+#Patchface {
+	background: url(../images/house/baratheon/patchface_large.jpg) no-repeat;
+}
+
+/*Tyrell*/
+#Mace {
+	background: url(../images/house/tyrell/mace_large.jpg) no-repeat;
+}
+#Loras {
+	background: url(../images/house/tyrell/ser_loras_large.jpg) no-repeat;
+}
+#Garlan {
+	background: url(../images/house/tyrell/ser_garlan_large.jpg) no-repeat;
+}
+#Randyll {
+	background: url(../images/house/tyrell/randyll_tarly_large.jpg) no-repeat;
+}
+#Alester {
+	background: url(../images/house/tyrell/alester_florent_large.jpg) no-repeat;
+}
+#Margeary {
+	background: url(../images/house/tyrell/margaery_large.jpg) no-repeat;
+}
+#Queen {
+	background: url(../images/house/tyrell/queen_of_thorns_large.jpg) no-repeat;
+}
+
+/*Martell*/
+#Viper {
+	background: url(../images/house/martell/the_red_viper_large.jpg) no-repeat;
+}
+#Hotah {
+	background: url(../images/house/martell/areoh_hotah_large.jpg) no-repeat;
+}
+#Obara {
+	background: url(../images/house/martell/obara_sand_large.jpg) no-repeat;
+}
+#Darkstar {
+	background: url(../images/house/martell/darkstar_large.jpg) no-repeat;
+}
+#Nymeria {
+	background: url(../images/house/martell/nymeria_sand_large.jpg) no-repeat;
+}
+#Arianne {
+	background: url(../images/house/martell/arianne_large.jpg) no-repeat;
+}
+#Doran {
+	background: url(../images/house/martell/doran_large.jpg) no-repeat;
+}
+/*no cards*/
+#nocard{
+	background:#000;
+}
+
+#popup2Content .votethrone {
+	margin: 15px 50px 0 110px;
+}
+#popup2Content .votefiefdom {
+	margin: 15px 50px 0 0px;
+}
+#queenform .supzone{
+	cursor:pointer;
+}
+
+/*areas to upgrade Footman to a Knight*/
+#upgradearea li {
+	display: block;
+	margin: 20px auto;
+	width:200px;
+	position:relative;
+	left:-15px;
+}
+
+/*consolidate power*/
+#popupContent .mustering {
+	margin-left:50px;
+}
+#popupContent .power {
+	margin-left:60px;
+}
+#newunit {
+	height:50px;
+	width:50px;
+	font-size:45px;
+	float:left;
+	margin-left:15px;
+	margin-top: 6px;
+	cursor:pointer;
+	color:#33CC00;
+	border:1px dashed #33FF33;
+	text-align:center;
+}
+#toEngine {
+	margin-left: 30px;
+}
+#choosewater .button {
+	margin-left: 30px;
+}
+
+/*Throne of Blades WC*/
+#Supply, #GoT, #noDef {
+    margin-left: 60px;
+}
+#Mustering, #CoK, #noMar {
+    margin-left: 45px;
+}
+#nothing {
+    margin-left: 45px;
+}
+/*Winter is Coming WC*/
+#Shuffle {
+    margin-left:-45px;
+    left:50%;
+    position:relative;
+}
+
+/*Wildling Attack*/
+#bids li select{
+    font-size: 1.5em;
+}
+.select-1 {
+    background-color: #fffd00;
+}
+.select-2 {
+    background-color: #79ff00;
+}
+.select-3 {
+    background-color: #00fffc;
+}
+.select-4 {
+    background-color: #ff1b00;
+}
+.select-5 {
+    background-color: #ff00ee;
+}
+
+#tiesubmit {
+    margin-left: 170px;
+}
+#Reduce {
+    margin-left: 55px;
+}
